@@ -9,3 +9,9 @@ function numberChecker(num) {
     return `${num} isn't even a number :(`;
   }
 }
+
+console.log(numberChecker(4));
+console.log(numberChecker(34));
+console.log(numberChecker("20"));
+console.log(numberChecker(20));
+console.log(numberChecker("hey"));

@@ -9,6 +9,12 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+//code 
+if (danielsRole.toLowerCase() === "mentor") {
+  console.log(`Hi, I'm ${ name }, I'm a mentor.`);
+} else {
+  onsole.log(`Hi, I'm ${ name }, I'm a student.`);
+}
 /* 
 EXPECTED RESULT
 ---------------

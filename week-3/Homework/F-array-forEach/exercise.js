@@ -9,6 +9,31 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
+arr.forEach(el => {
+  if (el%3 === 0 && el%5 === 0){
+    console.log("FizzBuzz");
+  } else if (el%5 === 0){
+    console.log("Buzz");
+  } else if (el%3 === 0){
+    console.log("Fizz");
+  }else {
+    console.log(el);
+  }
+});
+
+let arr2 = arr.map(el => {
+  if(el%3 ===0 && el%5 === 0){
+    return "FizzBuzz";
+  }else if (el%5 === 0){
+    return "Buzz";
+  }else if (el%3 ===0){
+    return "Fizz";
+  } else {
+    return el;
+  }
+});
+console.log(arr2);
+
 /* EXPECTED OUTPUT */
 
 /*
@@ -28,3 +53,4 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 14
 'FizzBuzz'
 */
+
